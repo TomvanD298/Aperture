@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.O.T.D</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body id="photomain">
+    <header>
+        <a href="profile.html"><img src="images/profile.png" alt="profile picture"></a>
+        <h1>Aperture</h1>
+        <a href="index.html"><img class="home" src="images/home.png" alt="home button"></a>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Make a photo of a:</h2>
+            <div class="flexbox">
+                <h3>Reflection</h3>
+                <img id="info" onclick="showPopUp()" src="images/info.png" alt="info button">
+            </div>
+        </section>
+
+        <img id="phototoday" onclick="showPhoto()" src="images/reflection-7.jpg" alt="photo of a reflection">
+
+        <div id="share">
+            <img src="images/cameraicon-wit.png" alt="camera">
+            <div class="vl"></div>
+            <img src="images/upload.png" alt="upload button">
+        </div>
+
+        <!-- ********JS-code geholpen door Daniel van Droffelaar ********-->
+
+        <div id="js--popup" class="pop-up">
+            <img onclick="hidePopUp()" id="kruisje" src="images/kruisje.png" alt="back button">
+            <img src="images/mirror.png" alt="explanation of a reflection">
+            <!-- bron:https://www.sciencelearn.org.nz/resources/48-reflection-of-light#:~:text=Reflection%20is%20when%20light%20bounces,This%20is%20called%20specular%20reflection.&text=Light%20reflects%20from%20a%20smooth,as%20it%20hits%20the%20surface. -->
+            <p><u>Reflection</u> is when light bounces off an object. If the surface is smooth and shiny, like a mirror,
+                water or metal, the light will reflect at the same angle as it hit the surface. This is called specular
+                reflection. Light reflects from a smooth surface at the same angle as it hits the surface.</p>
+        </div>
+
+        <div id="js--photo" class="photofull">
+            <img onclick="hidePhoto()" id="back" src="images/kruisje.png" alt="back button">
+            <img src="images/reflection-7.jpg" alt="photo of a reflection">
+        </div>
+
+    </main>
+
+    <footer>
+        <a>©2023 - Tom van Droffelaar - CMD</a>
+    </footer>
+</body>
+
+</html>

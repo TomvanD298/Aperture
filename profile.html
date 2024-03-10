@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body id="profile">
+    <header>
+        <a href="settings.html"><img src="images/settings.png" alt="Settings"></a>
+        <h1>Aperture</h1>
+        <a href="index.html"><img class="home" src="images/home.png" alt="homepage"></a>
+    </header>
+
+    <main>
+
+        <img id="profilepicture" src="images/profile.png" alt="profile picture">
+
+        <h2 id="name">Tom van Droffelaar</h2>
+
+        <h4 id="username">@tomvd_298</h4>
+
+        <div class="followers">
+            <p class="huidig">Followers</p>
+            <p class="inactief">31415</p>
+            <p class="huidig">Following</p>
+            <p class="inactief">666</p>
+        </div>
+
+        <h3>My pictures</h3>
+
+        <div class="photogrid">
+            <img onclick="showPhoto()" src="photos/photo-tom-20.jpg" alt="photo">
+            <img onclick="showPhoto2()" src="photos/photo-tom-22.jpg" alt="photo">
+            <img src="photos/photo-tom-10.jpg" alt="photo">
+            <img src="photos/photo-tom-14.jpg" alt="photo">
+            <img src="photos/photo-tom-3.jpg" alt="photo">
+            <img src="photos/photo-tom-4.jpg" alt="photo">
+            <img src="photos/photo-tom-23.jpg" alt="photo">
+            <img src="photos/photo-tom-24.jpg" alt="photo">
+            <img src="photos/photo-tom-7.jpg" alt="photo">
+            <img src="photos/photo-tom-8.jpg" alt="photo">
+            <img src="photos/photo-tom-9.jpg" alt="photo">
+            <img src="photos/photo-tom-2.jpg" alt="photo">
+            <img src="photos/photo-tom-11.jpg" alt="photo">
+            <img src="photos/photo-tom-12.jpg" alt="photo">
+            <img src="photos/photo-tom-13.jpg" alt="photo">
+            <img src="photos/photo-tom-15.jpg" alt="photo">
+            <img src="photos/photo-tom-16.jpg" alt="photo">
+            <img src="photos/photo-tom-17.jpg" alt="photo">
+            <img src="photos/photo-tom-18.jpg" alt="photo">
+            <img src="photos/photo-tom-19.jpg" alt="photo">
+            <p>more...</p>
+        </div>
+
+        <!-- *********************{Javascript}********************* -->
+
+        <div id="js--photo" class="photofull">
+            <img onclick="hidePhoto()" id="kruisje" src="images/kruisje.png" alt="back button">
+            <h2>Reflections</h2>
+            <img src="photos/photo-tom-20.jpg" alt="photo">
+            <p>Thursday 27 Jan. 2023</p>
+        </div>
+
+        <div id="js--photo2" class="photofull">
+            <img onclick="hidePhoto2()" id="back" src="images/kruisje.png" alt="back button">
+            <h2>Depth of Field</h2>
+            <img src="photos/photo-tom-22.jpg" alt="photo">
+            <p>Wednesday 26 Jan. 2023</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <a>©2023 - Tom van Droffelaar - CMD</a>
+    </footer>
+</body>
+
+</html>
